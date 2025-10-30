@@ -4,3 +4,37 @@ https://www.shutterstock.com/blog/color-palettes-for-websites?pl=PPC_GOO_BR_PM-&
 https://getcssscan.com/css-box-shadow-examples
 
 
+
+
+o que ter no home:
+
+-welcome
+
+-historia
+
+-Desafios da mulher na área da tecnologia: Luta pela igualdade
+
+-Soluções para quebrar barreiras da desigualdade de gênero
+
+-Conclusão/Reflexão
+
+-Partipantes
+
+-Menu aberto
+
+
+  .footer-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #f4f4f4;
+  }
+  .footer-section {
+      flex: 1;
+      margin: 0 10px;
+  }
+  .footer-bottom {
+      text-align: center;
+      padding: 10px;
+      background-color: #ddd;
+  }

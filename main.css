@@ -3,7 +3,8 @@
   --azul: #647295;
   --magenta: #9f496e;
   --escuro: #2b262d;
-  --laranja: #ff9f43
+  --laranja: #ff9f43;
+  --vermelho: #ff6f61;
 }
 
 * {
@@ -20,7 +21,8 @@ body {
 }
 
 header {
-  background-color: var(--escuro); /*#24252a; */
+  background-color: var(--escuro);
+  /*#24252a; */
   color: white;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -63,7 +65,7 @@ header {
 }
 
 .nav-link:hover {
-  color: #ff6f61;
+  color: var(--vermelho);
 }
 
 .nav-actions {
@@ -82,7 +84,7 @@ header {
 }
 
 .nav-actions button:hover {
-  background-color: #ff6f61;
+  background-color: var(--vermelho);
   color: white;
 }
 
@@ -155,7 +157,7 @@ header {
   }
 
   .mobile-menu .mobile-nav-link:hover {
-    color: #ff6f61;
+    color: var(--vermelho);
   }
 
   .mobile-menu .nav-actions {
@@ -214,7 +216,7 @@ main p {
 /* Seção História */
 .historia {
   background-color: var(--azul);
-  height: 70vh;
+  height: 110vh;
   padding: 0 6rem;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   display: flex;
@@ -258,8 +260,9 @@ main p {
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
+
 .learn-more-btn:hover {
-  background-color: #ff6f61;
+  background-color: var(--vermelho);
 }
 
 /* Linha do Tempo */
@@ -268,8 +271,9 @@ main p {
   padding: 0;
   /* margin: 20px; */
   position: relative;
-  height: 70vh;
+  height: 110vh;
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -280,12 +284,14 @@ main p {
   height: 100%;
   background: var(--escuro);
 }
+
 .timeline li {
   top: 30px;
   margin-bottom: 30px;
   padding-left: 30px;
   position: relative;
 }
+
 .timeline li::before {
   content: "";
   position: absolute;
@@ -296,23 +302,26 @@ main p {
   background: var(--laranja);
   border-radius: 50%;
 }
+
 .timeline h3 {
   margin: 0;
   font-size: 1.2rem;
 }
+
 .timeline p {
   margin: 5px 0 0 0;
   font-size: .9rem;
 }
 
-.timeline .content{
-    background-color: var(--beje);
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.timeline .content {
+  background-color: var(--beje);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.timeline .content:hover{
-    background-color: #e0d7cd;
+
+.timeline .content:hover {
+  background-color: #e0d7cd;
 }
 
 /* Serviços */
@@ -324,17 +333,19 @@ main p {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(225, 227, 230, 0.2) 0px 8px 24px;
 }
 
 .content-srv {
   max-width: 50%;
 }
+
 .content-srv h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--escuro);
 }
+
 .content-srv p {
   font-size: 1rem;
   line-height: 1.45;
@@ -343,12 +354,73 @@ main p {
 
 
 
-/*Participantes*/  
+
+/* Solutions */
+
+.solutions {
+  background-color: var(--escuro);
+  height: 70vh;
+  padding: 2rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: rgba(235, 235, 236, 0.25) 0px 50px 100px -20px, rgba(250, 250, 250, 0.3) 0px 30px 60px -30px, rgba(242, 244, 245, 0.35) 0px -2px 6px 0px inset;
+}
+
+.content-solutions {
+  max-width: 50%;
+  color: white;
+}
+
+.content-solutions h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-solutions p {
+  color: #e0e0e0;
+}
+
+
+/* Reflexão */ 
+
+.reflexao{
+  background-color: var(--beje)  ;
+  height: 70vh;
+  padding: 1rem 6rem;
+  display: flex;
+  align-items:normal;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
+}
+
+.content-reflexao{
+  max-width: 70%;
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.content-reflexao h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content-reflexao p{
+  font-size: 1.2rem;
+  text-indent: 3em;
+}
+
+/*Participantes*/
 .participantes {
   background-color: var(--magenta);
   color: white;
   padding: 2rem 6rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 }
 
 .content-cards {
@@ -366,22 +438,105 @@ main p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+
 .participantes .card h2 {
   margin-bottom: 0.5rem;
 }
+
 .participantes .card p {
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
-
 /* Footer */
-footer {
-  background-color: var(--escuro);
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem 6rem;
+    background-color: var(--escuro);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 1rem;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--vermelho);
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #e0e0e0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--vermelho);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links li a {
+    color: var(--laranja);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: var(--vermelho);
+}
+
+.footer-bottom {
+    background-color: var(--escuro);
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--azul);
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+/* Responsividade para Mobile */
+@media screen and (max-width: 730px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 1rem 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
